@@ -1,0 +1,21 @@
+Package: kmfars2
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Konstantin",
+           family = "Mingoulin",
+           role = c("aut", "cre"),
+           email = "kmingoulin@gmail.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: What the package does (one paragraph).
+License: GPL
+Depends: R (>= 2.10)
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+Imports: maps, dplyr, readr, tidyr, magrittr
+

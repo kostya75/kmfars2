@@ -1,0 +1,53 @@
+---
+title: "Vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## This vignette document is the official description of the super advanced package that import data, summarizes and builds some fancy plots
+
+## To use the package you will need:
+* files that contain accident data in the format 'accident_%d.csv.bz2' in home directory of your project
+
+***
+
+## Detailed usage
+* you can supply multiple years at once in
+```{r eval=F}
+fars_read_years(c(2015,2016,2017))
+```
+* if you are just interested in summary counts you can use
+```{r eval=F}
+fars_summarize_years(c(2015,2016,2017))
+```
+* the package allows for mapping of accidents over a county map in a single year:
+```{r eval=F}
+fars_map_state(state.num, year)
+```
+
+***
+## Package also contains data 'accident-accident' that can be accessed as:
+```{r eval=F}
+data(package="kmfars2")
+```
+
+***
+## External data
+
+The package contains external data that can be used for testing. The data can be accessed by using the following code:
+```{r eval=F}
+system.file("extdata", "accident_2013.csv.bz2", package = "kmfars2")
+system.file("extdata", "accident_2014.csv.bz2", package = "kmfars2")
+system.file("extdata", "accident_2015.csv.bz2", package = "kmfars2")
+
+```
