@@ -4,8 +4,12 @@ Konstantin Mingoulin
 
 # kmfars2
 
+[\[Travis build status\]](https://travis-ci.org/kostya75/kmfars2)
+
 <!-- badges: start -->
 
+[![Travis build
+status](https://travis-ci.org/kostya75/kmfars2.svg?branch=master)](https://travis-ci.org/kostya75/kmfars2)
 <!-- badges: end -->
 
 ## The goal of *kmfars2* is to:
